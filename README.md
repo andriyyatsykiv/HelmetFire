@@ -27,8 +27,7 @@
 </p>
 
 
-While learning fundamentals of BRAA and bullseye callouts for combat flight sims, I saw that there were limited resources available to interactively practice going from hearing a BRAA or BULLSEYE callout to converting that into actual, practical knowledge of where another aircraft (or your own) is located. 
-
+While learning fundamentals of BRAA and bullseye callouts for combat flight sims, I saw that there were limited resources available to interactively practice going from hearing a BRAA or BULLSEYE callout to converting that into actual, practical knowledge of where another aircraft (or your own) is located. If you wanted to practice in a dynamic environment, your only option was to load up a full simulator scenario, which is time consuming and takes time away from actually going out and doing the things you enjoy.
 
 HelmetFire is a completely free and open-source BRAA and BULLSEYE call simulator that I designed and coded to overcome this problem and help practice BRAA and BULLSEYE callouts on-demand and in a customizable and controlled environment. The features include :
 
