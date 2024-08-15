@@ -38,7 +38,7 @@ HelmetFire is a completely free and open-source BRAA and BULLSEYE call simulator
  * A [BULLSEYE](https://www.youtube.com/watch?v=UjLiGRtS_NQ&pp=ygUSYnVsbHNleWUgY2FsbHMgZGNz) call mode
     * Similar to the above, except the calls are given relative to a bullseye.
 
-## Customizations (click for more detail):
+## Customizations:
 
 <a href="https://github.com/andriyyatsykiv/HelmetFire"><img src="https://github.com/andriyyatsykiv/HelmetFire/blob/a17192005b3d22f3b426387878d4e2f5920b5998/HelmetFire/HelmetFire%202D%20Assets/HelmetFire%20Screenshots/HelmetFire%20Options.png" alt="HelmetFire" width="400"></a>
 
