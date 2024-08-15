@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://drmces6mch12y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k5448"]
+albedo_color = Color(0, 0.0833333, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_44350"]
+material = SubResource("StandardMaterial3D_k5448")
+top_radius = 4.0
+bottom_radius = 4.0
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j476i"]
+albedo_color = Color(0.36, 0.392, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u0ie0"]
+material = SubResource("StandardMaterial3D_j476i")
+top_radius = 0.2
+bottom_radius = 1.0
+
+[node name="bullseye" type="CharacterBody3D"]
+
+[node name="bullseyeminimapmesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.57059, 0)
+layers = 16
+mesh = SubResource("CylinderMesh_44350")
+skeleton = NodePath("../bullseyemesh")
+
+[node name="bullseyemesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.6, 0)
+mesh = SubResource("CylinderMesh_u0ie0")

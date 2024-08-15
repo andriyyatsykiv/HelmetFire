@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dll4tdt0212rm"]
+
+[ext_resource type="Script" path="res://flyingtarget.gd" id="1_v4lv3"]
+[ext_resource type="AudioStream" uid="uid://ct0lra3m2kwcb" path="res://HelmetFire Audio/lowtone.wav" id="2_eiwiu"]
+[ext_resource type="AudioStream" uid="uid://n8e4u2qjf7bd" path="res://HelmetFire Audio/hightone.wav" id="3_jc5ag"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eslv4"]
+albedo_color = Color(1, 0.34, 0.351, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_6cg58"]
+material = SubResource("StandardMaterial3D_eslv4")
+radius = 1.0
+height = 2.0
+
+[node name="flyingtarget" type="CharacterBody3D" groups=["targetinstances"]]
+script = ExtResource("1_v4lv3")
+
+[node name="targetmesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_6cg58")
+
+[node name="missed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_eiwiu")
+volume_db = -20.0
+
+[node name="correct" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jc5ag")
+volume_db = -10.0

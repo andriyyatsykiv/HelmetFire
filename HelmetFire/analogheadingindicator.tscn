@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7vqskmex3fhn"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vwxwy"]
+top_radius = 0.08
+bottom_radius = 0.08
+height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjk0r"]
+albedo_color = Color(1, 0.24, 0.24, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_85ql4"]
+material = SubResource("StandardMaterial3D_yjk0r")
+top_radius = 0.003
+bottom_radius = 0.013
+height = 0.08
+
+[node name="AnalogHeadingIndicator" type="MeshInstance3D"]
+mesh = SubResource("CylinderMesh_vwxwy")
+
+[node name="Needle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.0608852, 0.00126989)
+mesh = SubResource("CylinderMesh_85ql4")
+
+[node name="N" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.0545119, -0.0626987)
+pixel_size = 0.001
+text = "N"
+font_size = 20
+
+[node name="90" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.0633953, 0.055, 0)
+pixel_size = 0.001
+text = "90"
+font_size = 20
+
+[node name="180" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.0545119, 0.0676358)
+pixel_size = 0.001
+text = "180"
+font_size = 20
+
+[node name="270" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.0563734, 0.0545119, 0.000624128)
+pixel_size = 0.001
+text = "270"
+font_size = 20

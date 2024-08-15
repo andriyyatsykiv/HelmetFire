@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://n8e4u2qjf7bd"
+path="res://.godot/imported/hightone.wav-083fedf30edf239eb439126d5866670a.sample"
+
+[deps]
+
+source_file="res://HelmetFire Audio/hightone.wav"
+dest_files=["res://.godot/imported/hightone.wav-083fedf30edf239eb439126d5866670a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

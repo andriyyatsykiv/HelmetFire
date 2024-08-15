@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://ptlmli2pin53"]
+
+[ext_resource type="PackedScene" uid="uid://dd5vtehtgotu3" path="res://cockpit.tscn" id="1_lncy5"]
+[ext_resource type="Script" path="res://main.gd" id="1_ybqk5"]
+[ext_resource type="PackedScene" uid="uid://dll4tdt0212rm" path="res://flyingtarget.tscn" id="2_4srpu"]
+[ext_resource type="PackedScene" uid="uid://drmces6mch12y" path="res://bullseye.tscn" id="4_s3pal"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wr0kh"]
+ground_bottom_color = Color(0.2, 0.156863, 0.133333, 1)
+
+[sub_resource type="Sky" id="Sky_kp8s2"]
+sky_material = SubResource("ProceduralSkyMaterial_wr0kh")
+
+[sub_resource type="Environment" id="Environment_7gf7g"]
+background_mode = 2
+sky = SubResource("Sky_kp8s2")
+ambient_light_color = Color(0.313681, 0.442131, 0.559683, 1)
+ambient_light_energy = 2.0
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ybqk5")
+target_scene = ExtResource("2_4srpu")
+cockpit_scene = ExtResource("1_lncy5")
+bullseye_scene = ExtResource("4_s3pal")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -2, 4, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7gf7g")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="bullseyemarker" type="Node3D" parent="."]
+
+[node name="Cockpit" parent="." instance=ExtResource("1_lncy5")]
+
+[node name="bullseye" parent="." instance=ExtResource("4_s3pal")]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://pc5j8xmd0b2a"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_lauqx"]
+[ext_resource type="PackedScene" uid="uid://da5ilrt1v5e8" path="res://hud.tscn" id="2_nxq7o"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_lauqx")
+
+[node name="Camera" type="Camera3D" parent="."]
+cull_mask = 1048559
+
+[node name="HUD" parent="." instance=ExtResource("2_nxq7o")]

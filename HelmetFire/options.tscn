@@ -1,0 +1,205 @@
+[gd_scene load_steps=2 format=3 uid="uid://cntdunt5a4kno"]
+
+[ext_resource type="Script" path="res://options.gd" id="1_pwea5"]
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pwea5")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="OptionsLabelMargin" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="OptionsLabel" type="Label" parent="MarginContainer/VBoxContainer/OptionsLabelMargin"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "OPTIONS AND CONFIGURATION"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="GameOptions" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HeadingInstrumentStyles2" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HeadingInstrument" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/HeadingInstrumentStyles2"]
+layout_mode = 2
+text = "-- BULLSEYE --"
+horizontal_alignment = 1
+
+[node name="UseBullseye" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Uses bullseye system and generates directions relative to bullseye, instead of BRAA relative to your own aircraft."
+text = "Use Bullseye"
+
+[node name="BullseyeVisible" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "If enabled, bullseye site appears as blue cone."
+text = "Is Bullseye location visible?"
+
+[node name="TextBullseye" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Displays your own aircraft's bullseye bearing and range in the cockpit as text in \"BEARING / MILES\" format"
+text = "Display own Bullseye as text"
+
+[node name="MapBullseye" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Displays a minimap centered on the bullseye with bullseye and player location. Configurable."
+text = "Display Bullseye location as Minimap"
+
+[node name="HeadingInstrumentStyles" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HeadingInstrument" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/HeadingInstrumentStyles"]
+layout_mode = 2
+text = "-- HEADING INSTRUMENT STYLES --"
+horizontal_alignment = 1
+
+[node name="AnalogHeadingIndicator" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Displays the heading numerically"
+text = "Analog Heading Indicator"
+
+[node name="NumericalHeadingIndicator" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Displays the heading numerically"
+text = "Numerical Heading Indicator"
+
+[node name="HeadingInstrumentStyles3" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HeadingInstrument" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/HeadingInstrumentStyles3"]
+layout_mode = 2
+text = "-- MISCELLANEOUS --"
+horizontal_alignment = 1
+
+[node name="TargetsVisible" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "Allows you to see the targets that are being generated and called out"
+text = "Make Targets Visible"
+
+[node name="Subtitles" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+text = "Subtitles"
+
+[node name="RandomizeOwnDirection" type="CheckButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GameOptions"]
+layout_mode = 2
+tooltip_text = "If enabled, will allow your aircraft to face random directions other than north. 
+If disabled, simulator always starts with aircraft facing north."
+text = "Randomize Own-Aircraft Direction"
+
+[node name="ControlOptions" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="ControlOptionsLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+text = "-- CONTROL OPTIONS --
+"
+horizontal_alignment = 1
+
+[node name="MouseSensLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+text = "Mouse Sensitivity"
+horizontal_alignment = 1
+
+[node name="MouseSensitivity" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "How much your in-game view moves when you move your mouse"
+
+[node name="TimerTimeLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+text = "Timer Time (In Seconds)"
+horizontal_alignment = 1
+
+[node name="TimerTime" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "How much time you get before the next challenge is generated"
+
+[node name="AllowableErrorLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+text = "Allowable Directional Error"
+horizontal_alignment = 1
+
+[node name="AllowableDirectionalError" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "How far you can click away from the intended target before you get marked wrong, in degrees of view.
+Think of this like you're aiming a flashlight at the target, the degrees is how wide it is."
+
+[node name="SettingPresetsLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+text = "-- SETTING PRESETS --
+
+"
+horizontal_alignment = 1
+
+[node name="EasyPreset" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "For learning how BRAA and Bullseye calls work, and how things work in this program."
+text = "EASY PRESET"
+
+[node name="DefaultPreset" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "For those who have learned the theory behind BRAA and Bullseye, and want to practice their spacial orientation and situational awareness."
+text = "DEFAULT PRESET"
+
+[node name="HardPreset" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions"]
+layout_mode = 2
+tooltip_text = "For those with excellent spacial orientation looking for a challenge."
+text = "HARD PRESET"
+
+[node name="Main Menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MENU"
+
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/UseBullseye" to="." method="_on_use_bullseye_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/BullseyeVisible" to="." method="_on_bullseye_visible_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/TextBullseye" to="." method="_on_text_bullseye_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/MapBullseye" to="." method="_on_map_bullseye_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/AnalogHeadingIndicator" to="." method="_on_analog_heading_indicator_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/NumericalHeadingIndicator" to="." method="_on_numerical_heading_indicator_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/TargetsVisible" to="." method="_on_targets_visible_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/Subtitles" to="." method="_on_subtitles_toggled"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/RandomizeOwnDirection" to="." method="_on_randomize_own_direction_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/RandomizeOwnDirection" to="." method="_on_randomize_own_direction_button_up"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/GameOptions/RandomizeOwnDirection" to="." method="_on_randomize_own_direction_toggled"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/MouseSensitivity" to="." method="_on_mouse_sensitivity_text_changed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/TimerTime" to="." method="_on_timer_time_text_changed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/AllowableDirectionalError" to="." method="_on_allowable_directional_error_text_changed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/EasyPreset" to="." method="_on_easy_preset_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/DefaultPreset" to="." method="_on_default_preset_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ControlOptions/HardPreset" to="." method="_on_hard_preset_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]

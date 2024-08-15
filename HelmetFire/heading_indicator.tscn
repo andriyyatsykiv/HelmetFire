@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://do61jg2rfu4g8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_02vy4"]
+albedo_color = Color(0.77, 0.77, 0.77, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sdv83"]
+material = SubResource("StandardMaterial3D_02vy4")
+size = Vector3(0.1, 0.04, 0.01)
+
+[node name="HeadingIndicator" type="Node3D"]
+
+[node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_sdv83")
+
+[node name="HeadingLabel" type="Label3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0109577, 0.00569627)
+pixel_size = 0.001
+text = "HEADING"
+font_size = 15
+
+[node name="HeadingText" type="Label3D" parent="Body"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00828727, 0.00569627)
+pixel_size = 0.001
+text = "HEADING"
+font_size = 20

@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvwfm2sdq6tgh"]
+
+[ext_resource type="Script" path="res://minimap.gd" id="1_gpp0d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_n6ty1"]
+size = Vector3(0.15, 0.15, 0.01)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_geup5"]
+viewport_path = NodePath("Body/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f7x5c"]
+albedo_color = Color(0.41, 0.41, 0.41, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_73xif"]
+material = SubResource("StandardMaterial3D_f7x5c")
+size = Vector3(200, 1, 200)
+
+[node name="Minimap" type="Node3D"]
+script = ExtResource("1_gpp0d")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_n6ty1")
+
+[node name="Screen" type="Sprite3D" parent="Body"]
+transform = Transform3D(0.028, 0, 0, 0, 0.028, 0, 0, 0, 0.028, 0, 0, 0.00712156)
+texture = SubResource("ViewportTexture_geup5")
+
+[node name="SubViewport" type="SubViewport" parent="Body"]
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="MinimapCamera" type="Camera3D" parent="Body/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 30, 0)
+cull_mask = 1047568
+projection = 1
+size = 200.0
+
+[node name="MinimapBackground" type="MeshInstance3D" parent="Body/SubViewport/MinimapCamera"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.76798e-06, -40.4467)
+layers = 16
+mesh = SubResource("BoxMesh_73xif")
+skeleton = NodePath("../../../..")
+
+[node name="NorthLabel" type="Label3D" parent="Body/SubViewport/MinimapCamera/MinimapBackground"]
+transform = Transform3D(100, 0, 0, 0, -4.37114e-06, 100, 0, -100, -4.37114e-06, 0, 1.32222, -76.5246)
+layers = 16
+modulate = Color(1, 0.43, 0.43, 1)
+text = "N"
+outline_size = 8
+
+[node name="Chevron" type="Label3D" parent="Body/SubViewport/MinimapCamera/MinimapBackground/NorthLabel"]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 0, 0.123281, 7.45058e-09)
+layers = 16
+pixel_size = 0.004
+modulate = Color(1, 0.43, 0.43, 1)
+text = ">"
+outline_size = 8
