@@ -53,7 +53,7 @@ HelmetFire is a completely free and open-source BRAA and BULLSEYE call simulator
 
 # How To Use
 After downloading the program from the [latest release](TODO RELEASE LINK), launch the HelmetFire.exe included in the download, and configure
-your preferred settings in the options menu.
+your preferred settings in the options menu. When playing, use your mouse to turn towards where you believe the target is, and click. You will hear a positive-sounding tone if you are correct, and a bad-sounding tone if you are not.
 
 ## Settings
 In addition to the settings presets provided, anyone can change
