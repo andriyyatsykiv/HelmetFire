@@ -114,6 +114,3 @@ This software used, referenced, or was otherwise helped by the following project
 
 
 ---
-
-> <a href="malynovy.com">My Personal Site</a> &nbsp;&middot;&nbsp;
-> <a href=>Github Profile</a>  &nbsp;&middot;&nbsp;
