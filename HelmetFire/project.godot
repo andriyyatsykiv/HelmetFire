@@ -11,6 +11,8 @@ config_version=5
 [application]
 
 config/name="HelmetFire"
+config/description="Aviation-specific skills training software for aviation enthusiasts"
+config/version="1.0"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/show_image=false
