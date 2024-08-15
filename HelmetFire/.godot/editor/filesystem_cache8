@@ -1,0 +1,47 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1723724701
+analogheadingindicator.tscn::PackedScene::7063240456797783647::1723723144::0::1::::<><>::
+bullseye.tscn::PackedScene::8377374496993166894::1723723144::0::1::::<><>::
+bullseyetextindicator.tscn::PackedScene::3034039152033066285::1723723144::0::1::::<><>::
+cockpit.gd::GDScript::-1::1723723144::0::1::::<>StaticBody3D<>::
+cockpit.tscn::PackedScene::7433069123326377856::1723723144::0::1::::<><>::res://cockpit.gd<>uid://cb2246x36aoan::::res://HelmetFire Blender/Cockpit.blend<>uid://pc5j8xmd0b2a::::res://player.tscn<>uid://c7vqskmex3fhn::::res://analogheadingindicator.tscn<>uid://do61jg2rfu4g8::::res://heading_indicator.tscn<>uid://bjhygf4352hxl::::res://bullseyetextindicator.tscn<>uid://cvwfm2sdq6tgh::::res://minimap.tscn
+export_presets.cfg::TextFile::-1::1723723144::0::1::::<><>::
+flyingtarget.gd::GDScript::-1::1723723144::0::1::::<>CharacterBody3D<>::
+flyingtarget.tscn::PackedScene::7955842397361092122::1723723144::0::1::::<><>::res://flyingtarget.gd<>uid://ct0lra3m2kwcb::::res://HelmetFire Audio/lowtone.wav<>uid://n8e4u2qjf7bd::::res://HelmetFire Audio/hightone.wav
+heading_indicator.tscn::PackedScene::8207496643974405553::1723723144::0::1::::<><>::
+hud.tscn::PackedScene::212402931965734921::1723723144::0::1::::<><>::
+icon.svg::CompressedTexture2D::8110264938624578701::1723723144::1723724702::1::::<><>::
+main.gd::GDScript::-1::1723723144::0::1::::<>Node<>::
+main.tscn::PackedScene::1092745739707330268::1723723144::0::1::::<><>::uid://dd5vtehtgotu3::::res://cockpit.tscn<>res://main.gd<>uid://dll4tdt0212rm::::res://flyingtarget.tscn<>uid://drmces6mch12y::::res://bullseye.tscn
+Menu.gd::GDScript::-1::1723723144::0::1::::<>Control<>::
+menu.tscn::PackedScene::2443553761307018114::1723723144::0::1::::<><>::res://Menu.gd<>uid://cef2h3j7je5fn::::res://HelmetFire 2D Assets/Fonts/Unitblock-JpJma.ttf<>uid://bh6d326fmkekt::::res://HelmetFire 2D Assets/HelmetFire Icon.svg
+minimap.gd::GDScript::-1::1723723144::0::1::::<>Node3D<>::
+minimap.tscn::PackedScene::6292549854960749943::1723723144::0::1::::<><>::res://minimap.gd
+options.gd::GDScript::-1::1723723144::0::1::::<>Control<>::
+options.tscn::PackedScene::5724738092383206488::1723723144::0::1::::<><>::res://options.gd
+player.gd::GDScript::-1::1723723144::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::1058800761358018386::1723723144::0::1::::<><>::res://player.gd<>uid://da5ilrt1v5e8::::res://hud.tscn
+playercam.gd::GDScript::-1::1723723144::0::1::::Player<><>::
+::res://HelmetFire 2D Assets/::1723723144
+HelmetFire Icon PNG.png::CompressedTexture2D::1634853557366464476::1723723144::1723724702::1::::<><>::
+HelmetFire Icon SVG.svg::CompressedTexture2D::8344777362469695030::1723723144::1723724702::1::::<><>::
+HelmetFire Icon.svg::CompressedTexture2D::2941971919005819239::1723723144::1723724702::1::::<><>::
+::res://HelmetFire 2D Assets/Fonts/::1723723144
+Unitblock-JpJma.ttf::FontFile::5065571976093855775::1723723144::1723724702::1::::<><>::
+::res://HelmetFire 2D Assets/HelmetFire Screenshots/::1723723144
+HelmetFire Analog Heading Indicator.png::CompressedTexture2D::2484404000224291042::1723723144::1723724702::1::::<><>::
+HelmetFire Cockpit Playing.png::CompressedTexture2D::399851278785487973::1723723144::1723724702::1::::<><>::
+HelmetFire Cockpit Straight.png::CompressedTexture2D::5921113272443131557::1723723144::1723724702::1::::<><>::
+HelmetFire Minimap.png::CompressedTexture2D::3257693486424788674::1723723144::1723724702::1::::<><>::
+HelmetFire Options.png::CompressedTexture2D::3029165284297653614::1723723144::1723724702::1::::<><>::
+HelmetFire Subtitles.png::CompressedTexture2D::3744281906514048688::1723723144::1723724702::1::::<><>::
+HelmetFire Text Bullseye.png::CompressedTexture2D::5673124345268839677::1723723144::1723724702::1::::<><>::
+HelmetFire Text Heading Indicator.png::CompressedTexture2D::6388037470189459628::1723723144::1723724702::1::::<><>::
+::res://HelmetFire Audio/::1723723144
+hightone.wav::AudioStreamWAV::980875182088650909::1723723144::1723724702::1::::<><>::
+lowtone.wav::AudioStreamWAV::6158737129613374493::1723723144::1723724702::1::::<><>::
+::res://HelmetFire Blender/::1723723144
+Cockpit.blend::PackedScene::4900461222279775477::1723723144::1723724705::1::::<><>::
+Cockpit.glb::PackedScene::6686639150671137651::1723723144::1723724705::1::::<><>::
+::res://HelmetFire Singletons/::1723723144
+configloader.gd::GDScript::-1::1723723144::0::1::::<>Node<>::
