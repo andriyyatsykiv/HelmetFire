@@ -60,19 +60,19 @@ In addition to the settings presets provided, anyone can change
 the settings around to fit their intended goals, whether it be learning the fundamentals of BRAA and Bullseye calls,
 or to get used to converting a call to knowledge of where a target actually is in order to do so faster with practice.
 
-### Use Bullseye
+* ### Use Bullseye
 If enabled, instead of issuing a call in BRAA format relative to your own aircraft, will issue calls relative to a randomly generated bullseye.
 
-### Is bullseye location Visible?
+* ### Is bullseye location Visible?
 Toggles the bullseye marker's visibility _in the 3D world_ (does not affect its visibility on the minimap)
 
 You will see the marker as a blue cone.
 
-### Display own bullseye as text
+* ### Display own bullseye as text
 Will display your own aircraft's location relative to bullseye in BBB / MMM (Bearing and Miles) format on
 an instrument in the cockpit.
 
-### Analog Heading Indicator
+* ### Analog Heading Indicator
 Toggles the presence of an analog heading indicator, in the form of a N E S W dial with a red arrow
 that points to where your aircraft is facing.
 
