@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">Aviation-specific skills training software for aviation enthusiasts.</h4>
+<h4 align="center">FOSS Aviation-specific skills training software for aviation enthusiasts.</h4>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
