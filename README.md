@@ -109,7 +109,7 @@ This software used, referenced, or was otherwise helped by the following project
 
 [VTOL VR](https://store.steampowered.com/app/667970/VTOL_VR/) - Well optimized and accessible VR-based flight sim.
 
-[FreeSVG.org](FreeSVG.org) - For a variety of public domain scalable vector graphics, from which I obtained the helmet and flames for the HelmetFire icon.
+[FreeSVG.org](https://FreeSVG.org) - For a variety of public domain scalable vector graphics, from which I obtained the helmet and flames for the HelmetFire icon.
 
 
 
