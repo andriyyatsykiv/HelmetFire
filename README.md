@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/"><img src="" alt="HelmetFire" width="200"></a>
+  <a href="https://github.com/andriyyatsykiv/HelmetFire"><img src="https://github.com/andriyyatsykiv/HelmetFire/blob/33467a45b65a3d65ad5e1c3b2095f7716c01d152/HelmetFire/HelmetFire%202D%20Assets/HelmetFire%20Icon%20SVG.svg" alt="HelmetFire" width="200"></a>
   <br>
   HelmetFire
   <br>
