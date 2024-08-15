@@ -40,7 +40,7 @@ HelmetFire is a completely free and open-source BRAA and BULLSEYE call simulator
 
 ## Customizations (click for more detail):
 
-<a href="https://github.com/andriyyatsykiv/HelmetFire"><img src="https://github.com/andriyyatsykiv/HelmetFire/blob/a17192005b3d22f3b426387878d4e2f5920b5998/HelmetFire/HelmetFire%202D%20Assets/HelmetFire%20Screenshots/HelmetFire%20Options.png" alt="HelmetFire" width="800"></a>
+<a href="https://github.com/andriyyatsykiv/HelmetFire"><img src="https://github.com/andriyyatsykiv/HelmetFire/blob/a17192005b3d22f3b426387878d4e2f5920b5998/HelmetFire/HelmetFire%202D%20Assets/HelmetFire%20Screenshots/HelmetFire%20Options.png" alt="HelmetFire" width="400"></a>
 
 * Toggleable  <a href="###Make-targets-visible">enemy visibility</a>, to simulate BVR conditions.
 * Toggleable <a href="###Randomize-own-aircraft-direction">directional randomization</a> for the user aircraft. Beginner users may prefer to always start facing north, with this disabled.
