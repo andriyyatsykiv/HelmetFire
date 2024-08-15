@@ -73,44 +73,43 @@ Will display your own aircraft's location relative to bullseye in BBB / MMM (Bea
 an instrument in the cockpit.
 
 * ### Analog Heading Indicator
-Toggles the presence of an analog heading indicator, in the form of a N E S W dial with a red arrow
+Toggles the presence of an analog heading indicator, in the form of a _N E S W_ style heading dial with a red arrow
 that points to where your aircraft is facing.
 
-### Numerical Heading Indicator
-Toggles the presence of a digital heading indicator in the cockpit, that displays your current heading in numerical form.
+* ### Numerical Heading Indicator
+Toggles the presence of a digital heading indicator in the cockpit, that displays your current heading in numerical form as degrees.
 
-### Make targets visible
-Toggles the visibility of the targets that calls are based off of, to allow for simulation
-of BVR encounters.
+* ### Make targets visible
+Toggles the visibility of the target aircraft that calls are based off of, to allow for simulation of beyond visual range encounters.
 
-### Subtitles
-Toggles the display of the BRAA or bullseye call you hear in text form at the bottom of the screen. If disabled, you will only hear the audible call.
+* ### Subtitles
+Toggles the display of the BRAA or bullseye call you hear in text form at the bottom of the screen. If disabled, you will only hear the audible call. This makes it easier as it allows you to reference.
 
-### Randomize own-aircraft direction
-Toggles random rotation of the user's simulated cockpit for every challenge scenario. Without this enabled, cockpit will always face north.
+* ### Randomize own-aircraft direction
+Toggles random heading of the user's simulated cockpit for every challenge scenario. Without this enabled, cockpit will always face north.
 
-### Timer Time
+* ### Timer Time
 Sets the time (in seconds) between targets appearing.
 
-### Mouse Sensitivity
+* ### Mouse Sensitivity
 How sensitive the in-game mouse is to user mouse movements.
 
-### Allowable directional error
-Modifies the maximum error between where the user clicks, and the actual position of a target.
+* ### Allowable directional error
+Modifies the maximum error in degrees between where the user clicks, and the actual position of a target.
 
-Think of this as a flashlight, this number represents the width of the beam. Bigger numbers allow for greater click error and still getting marked correct.
+Think of this as a flashlight, this number represents the width of the beam in degrees. When you click, the program checks if the enemy is within X degrees of your click. Bigger numbers allow for greater click error and still getting marked correct.
 
 ## Credits
 
 This software used, referenced, or was otherwise helped by the following projects:
 
-[GODOT](https://github.com/godotengine/godot) - Open Source Game Engine
+[GODOT](https://github.com/godotengine/godot) - Open Source Game Engine that was used for the development of HelmetFire
 
-[Falcon BMS](https://www.falcon-bms.com/) - Incredibly detailed systems simulation of the F-16 viper aircraft and mission briefing/navigation.
+[Falcon BMS](https://www.falcon-bms.com/) - Incredibly detailed systems simulation of the F-16 viper aircraft and mission briefing/navigation. Now playable in VR!
 
-[VTOL VR](https://store.steampowered.com/app/667970/VTOL_VR/) - Extremely well optimized and accessible VR-based flight sim.
+[VTOL VR](https://store.steampowered.com/app/667970/VTOL_VR/) - Well optimized and accessible VR-based flight sim.
 
-[DCS World](https://www.digitalcombatsimulator.com/en/products/world/)
+[FreeSVG.org](FreeSVG.org) - For a variety of public domain scalable vector graphics, from which I obtained the helmet and flames for the HelmetFire icon.
 
 
 
