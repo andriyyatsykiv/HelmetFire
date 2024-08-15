@@ -51,9 +51,13 @@ HelmetFire is a completely free and open-source BRAA and BULLSEYE call simulator
 * A toggleable <a href="###Is bullseye location Visible?"> physical bullseye marker</a> present in the simulator space
 * A <a href="### Display own bullseye as text">textual indicator</a> showing your own location relative to bullseye, in "DEGREES / NAUTICAL MILES" format
 
-# How To Use
+# How To Use - Installing
 After downloading the program from the [latest release](TODO RELEASE LINK), launch the HelmetFire.exe included in the download, and configure
 your preferred settings in the options menu. When playing, use your mouse to turn towards where you believe the target is, and click. You will hear a positive-sounding tone if you are correct, and a bad-sounding tone if you are not.
+
+## Updating
+Your options are stored under \AppData\ (search for helmetfire in that folder). Delete that folder after updaing to re-fresh the settings and shaders for the new version. For browser versions, clear your cache.
+
 
 ## Settings
 In addition to the settings presets provided, anyone can change
