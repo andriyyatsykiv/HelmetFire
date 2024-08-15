@@ -23,7 +23,7 @@
 # Key Features
 
 <p align="center">
-<a href="https://github.com/"><img src="https://github.com/" alt="HelmetFire" width="800"></a>
+<a href="https://github.com/andriyyatsykiv/HelmetFire"><img src="https://github.com/andriyyatsykiv/HelmetFire/blob/76b69a2e011739b50d517f6226b2d6a826aa6752/HelmetFire/HelmetFire%202D%20Assets/HelmetFire%20Screenshots/HelmetFire%20Cockpit%20Playing.png" alt="HelmetFire" width="800"></a>
 </p>
 
 
