@@ -16,6 +16,7 @@ config/version="1.0"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/show_image=false
+boot_splash/image="res://HelmetFire 2D Assets/HelmetFire Icon PNG.png"
 config/icon="res://icon.svg"
 config/windows_native_icon="res://HelmetFire 2D Assets/HelmetFire Icon ICO2.ico"
 
