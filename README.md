@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">Installing / Playing</a> •
+  <a href="#how-to-use">Installing / Using</a> •
   <a href="#credits">Credits</a>
 </p>
 
